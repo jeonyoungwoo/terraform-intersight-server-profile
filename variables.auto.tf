@@ -29,7 +29,7 @@ variable "server_list" {
 variable "organization" {
   type        = string
   description = "The name of the Organization this resource is assigned to"
-  default     = "CIP"
+  default     = "CIP"   //변경
 }
 
 variable "server_profile_action" {
@@ -53,7 +53,7 @@ variable "imc_access_vlan" {
 variable "ip_pool" {
   type        = string
   description = "Name of IP Pool used by IMC Access Policy"
-  default     = "IMM-Demo-Terraform"
+  default     = "IP_Pool"   //변경
 }
 
 variable "local_user_policy" {
@@ -95,7 +95,7 @@ variable "lan_connectivity_policy" {
 variable "mac_pool" {
   type        = string
   description = "MAC Address Pool used by VNIC Ethernet Interfaces and LAN Connectivity Policy"
-  default     = "UCSX"
+  default     = "Mac_Pool"    //변경
 }
 
 variable "ethernet_network_group" {
