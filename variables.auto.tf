@@ -10,14 +10,14 @@ variable "server_list" {
   description = "Servers (identified by name, object_type, and target_platform) to assign to configured server profiles"
   default     =  [
     {
-      name                   = "FI6454-1-1",
+      name                   = "UCSX-FI FI-A",
       object_type            = "compute.Blade",
       target_platform        = "FIAttached",
       vmedia_policy          = "IMM-Demo-Terraform-UCSX1",
       boot_iso_file_location = "10.100.31.32/VMware-VMvisor-Installer-7.0U3c-19193900.x86_64.iso"
     },
     {
-      name                   = "FI6454-1-2",
+      name                   = "UCSX-FI FI-B",
       object_type            = "compute.Blade",
       target_platform        = "FIAttached",
       vmedia_policy          = "IMM-Demo-Terraform-UCSX2",
