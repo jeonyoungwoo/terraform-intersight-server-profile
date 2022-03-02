@@ -10,7 +10,7 @@ terraform {
   }
 }
 provider "intersight" {
-  apikey    = "61d542847564612d3345b882/61d545367564612d31edab46/61ecd1a57564612d315cce24"
+  apikey    = "6215f5837564612d33ba6c2b/6215f5837564612d33ba6c30/6215f5b87564612d31c00d14"
   secretkey = "./secretkey.pem"
   endpoint  = "https://intersight.com"
 }
