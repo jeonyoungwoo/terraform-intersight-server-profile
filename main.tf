@@ -2,7 +2,7 @@
 data "intersight_organization_organization" "organization_moid" {
   name = var.organization
 }
-
+#######
 # Server moids
 data "intersight_compute_physical_summary" "server_moid" {
   name  = var.server_list[count.index].name
