@@ -29,7 +29,7 @@ variable "server_list" {
 variable "organization" {
   type        = string
   description = "The name of the Organization this resource is assigned to"
-  default     = "default"
+  default     = "CIP"
 }
 
 variable "server_profile_action" {
