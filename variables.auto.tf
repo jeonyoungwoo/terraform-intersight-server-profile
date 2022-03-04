@@ -14,7 +14,7 @@ variable "server_list" {
       object_type            = "compute.Blade",
       target_platform        = "FIAttached",
       vmedia_policy          = "NFS-3",
-      boot_iso_file_location = "172.168.18.10/esxi.iso"
+      boot_iso_file_location = "172.168.18.10/esxi.iso"             //vmedia서버 구축 IP및 
     }
   ]
 }
