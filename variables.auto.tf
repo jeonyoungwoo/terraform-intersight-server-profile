@@ -48,7 +48,7 @@ variable "imc_access_vlan" {
 variable "ip_pool" {
   type        = string
   description = "Name of IP Pool used by IMC Access Policy"
-  default     = "IP_Pool"   //변경
+  default     = "IP_Pool"   //변경 #GUI생성후 적용내용 코드로 수정 필요
 }
 
 variable "local_user_policy" {
