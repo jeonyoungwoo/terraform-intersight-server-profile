@@ -121,7 +121,7 @@ resource "intersight_vmedia_policy" "NFS_cdd" {
     host_name               = ""
     is_password_set         = false
     mount_options           = ""
-    mount_protocol          = "NFS"
+    mount_protocol          = "nfs"
     object_type             = "vmedia.Mapping"
     password                = ""
     remote_file             = ""
