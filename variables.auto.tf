@@ -35,7 +35,7 @@ variable "organization" {
 variable "server_profile_action" {
   type        = string
   description = "Desired Action for the server profile (e.g., Deploy, Unassign)"
-  default     = "Deploy"    //Deploy  ->> No-op  >> Deploy
+  default     = "No-op"    //Deploy  ->> No-op  >> Deploy
 }
 
 variable "imc_access_policy" {
