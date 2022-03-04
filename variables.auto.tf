@@ -10,17 +10,10 @@ variable "server_list" {
   description = "Servers (identified by name, object_type, and target_platform) to assign to configured server profiles"
   default     =  [
     {
-      name                   = "FI6454-1-3",
+      name                   = "UCSX-FI-1-2",
       object_type            = "compute.Blade",
       target_platform        = "FIAttached",
       vmedia_policy          = "NFS-3",
-      boot_iso_file_location = "172.168.18.10/esxi.iso"
-    },
-    {
-      name                   = "FI6454-1-4",
-      object_type            = "compute.Blade",
-      target_platform        = "FIAttached",
-      vmedia_policy          = "NFS-4",
       boot_iso_file_location = "172.168.18.10/esxi.iso"
     }
   ]
