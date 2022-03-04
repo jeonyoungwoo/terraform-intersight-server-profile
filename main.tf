@@ -109,7 +109,7 @@ resource "intersight_boot_precision_policy" "disk_vmedia" {
   }
 }
 
-resource "intersight_vmedia_policy" "http_cdd" {
+resource "intersight_vmedia_policy" "NFS_cdd" {
   name    = var.server_list[count.index].vmedia_policy
   enabled = true
   mappings = [{
@@ -117,18 +117,18 @@ resource "intersight_vmedia_policy" "http_cdd" {
     authentication_protocol = "none"
     class_id                = "vmedia.Mapping"
     device_type             = "cdd"
-    file_location           = "http://${var.server_list[count.index].boot_iso_file_location}"
+    file_location           = "172.168.18.10/esxi.iso"
     host_name               = ""
     is_password_set         = false
     mount_options           = ""
-    mount_protocol          = "http"
+    mount_protocol          = "NFS"
     object_type             = "vmedia.Mapping"
     password                = ""
     remote_file             = ""
     remote_path             = ""
     sanitized_file_location = var.server_list[count.index].boot_iso_file_location
     username                = ""
-    volume_name             = "http-cdd"
+    volume_name             = "IMC_DVD"
   }]
   organization {
     object_type = "organization.Organization"
