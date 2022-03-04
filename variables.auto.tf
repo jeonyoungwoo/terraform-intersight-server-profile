@@ -13,15 +13,15 @@ variable "server_list" {
       name                   = "UCSX-FI-1-3",
       object_type            = "compute.Blade",
       target_platform        = "FIAttached",
-      vmedia_policy          = "IMM-Demo-Terraform-UCSX1",
-      boot_iso_file_location = "10.100.31.32/VMware-VMvisor-Installer-7.0U3c-19193900.x86_64.iso"
+      vmedia_policy          = "NFS-3",
+      boot_iso_file_location = "172.168.18.10/esxi.iso"
     },
     {
       name                   = "UCSX-FI-1-4",
       object_type            = "compute.Blade",
       target_platform        = "FIAttached",
-      vmedia_policy          = "IMM-Demo-Terraform-UCSX2",
-      boot_iso_file_location = "10.100.31.32/VMware-VMvisor-Installer-7.0U3c-19193900.x86_64.iso"
+      vmedia_policy          = "NFS-4",
+      boot_iso_file_location = "172.168.18.10/esxi.iso"
     }
   ]
 }
