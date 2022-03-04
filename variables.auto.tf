@@ -77,7 +77,7 @@ variable "local_username_password" {
 variable "boot_order_policy" {
   type        = string
   description = "Name of Boot Order Policy to associate with the server profile"
-  default     = "IMM-Demo-Terraform-UCSX"
+  default     = "IMM-NFS-Demo"
 }
 
 variable "boot_mode" {
@@ -89,7 +89,7 @@ variable "boot_mode" {
 variable "lan_connectivity_policy" {
   type        = string
   description = "Name of LAN Connectivity Policy to associate with the server profile"
-  default     = "IMM-Demo-Terraform-UCSX"
+  default     = "IMM-NFS-Demo"
 }
 
 variable "mac_pool" {
@@ -101,7 +101,7 @@ variable "mac_pool" {
 variable "ethernet_network_group" {
   type        = string
   description = "Ethernet Network Group Policy used by VNIC Ethernet Interfaces and LAN Connectivity Policy"
-  default     = "IMM-Demo-Terraform-UCSX"
+  default     = "IMM-NFS-Demo"
 }
 
 variable "mtu" {
