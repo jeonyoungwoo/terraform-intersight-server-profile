@@ -14,7 +14,7 @@ variable "server_list" {
       object_type            = "compute.Blade",
       target_platform        = "FIAttached",
       vmedia_policy          = "NFS-3",
-      boot_iso_file_location = "10.100.31.32/vol1/VMware_7.0U3c.iso"
+      boot_iso_file_location = "172.168.18.10/esxi.iso"
     }
   ]
 }
