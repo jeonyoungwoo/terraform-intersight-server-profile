@@ -22,13 +22,15 @@ variable "server_list" {
 variable "organization" {
   type        = string
   description = "The name of the Organization this resource is assigned to"
-  default     = "CIP"   //변경
+  default     = "CIP"   //변경 default ->> CIP
 }
 
 variable "server_profile_action" {
   type        = string
   description = "Desired Action for the server profile (e.g., Deploy, Unassign)"
-  default     = "Deploy"    //Deploy  ->> No-op  >> Deploy
+  default     = "Deploy"    //Deploy  ->> No-op  >> Deploy 
+#No-op(해당 프로파일 생성 assign)
+#Deploy(해당 프로파일 적용)
 }
 
 variable "imc_access_policy" {
@@ -88,7 +90,8 @@ variable "lan_connectivity_policy" {
 variable "mac_pool" {
   type        = string
   description = "MAC Address Pool used by VNIC Ethernet Interfaces and LAN Connectivity Policy"
-  default     = "Mac_Pool"    //변경
+  default     = "Mac_Pool"    //변경 
+                              #GUI생성후 적용내용 코드로 수정 필요
 }
 
 variable "ethernet_network_group" {
