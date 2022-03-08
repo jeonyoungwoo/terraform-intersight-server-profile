@@ -117,7 +117,7 @@ resource "intersight_vmedia_policy" "NFS_cdd" {
     authentication_protocol = "none"
     class_id                = "vmedia.Mapping"
     device_type             = "cdd"
-    file_location           = "172.168.18.10/esxi.iso"
+    file_location           = "10.100.23.190/esxi.iso"
     host_name               = ""
     is_password_set         = false
     mount_options           = ""
